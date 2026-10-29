@@ -68,18 +68,14 @@
      <!-- ЗАДАНИЕ 3 -->
       <?php 
       $del = $_GET['del'];
-      ?>
-      <?php 
       $query = "DELETE FROM test WHERE id=$del";
-      ?>
-      <?php 
       $link = mysqli_connect('localhost', 'root', '', 'mydb');
       mysqli_query($link, $query) or die(mysqli_error($link));
       ?>
 
 
     <!-- ЗАДАНИЕ 4 -->
-    <!-- http://127.0.0.1/5.php?del=1 ->-
+    <!-- http://127.0.0.1/5.php?del=1 -->
 
 
     <!-- ЗАДАНИЕ 5 -->
