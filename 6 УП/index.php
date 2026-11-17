@@ -9,6 +9,11 @@
     <p>текст для любого челика</p>
     <?php
     session_start();
+    if (isset($_SESSION['logout_message'])){
+        echo $_SESSION['logout_message'];
+        unset($_SESSION['logout_message']);
+    }
+
     if (isset($_SESSION['Complited'])) {
         echo $_SESSION['Complited'];
         unset($_SESSION['Complited']);
